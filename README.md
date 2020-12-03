@@ -22,7 +22,7 @@ cd /my/dir/
 ```
 1. execute qiskit2tex.py passing the file name (w/o ending) of the target circuit to be compiled into a tex file and the output directory as arguments (leaving the output directory empty will save the tex file in the input directory)
 ```
-&#35; python3 qiskit2tex.py "my_circuit"
+# python3 qiskit2tex.py "my_circuit"
 python3 qiskit2tex.py "my_circuit" "my/out/dir/"
 ```
 1. include the tex files in your TeX document, e.g.
