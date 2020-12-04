@@ -15,17 +15,17 @@ For this purpose, it leverages the built-in function `QuantumCircuit.draw()` of 
 
 ## Setup
 1. download the `qiskit2tex.py` file
-1. move it into the folder where the qiskit circuit files reside (NOTE: one file per circuit, each circuit needs to be assigned to a variable named 'qc', the folder must be declared a python module requiring the existence of a `__init__.py` file (can be empty))
+1. move it into the folder where the qiskit circuit files reside (NOTE: one file per circuit, each circuit needs to be assigned to a variable named 'qc')
 1. open command line interface, move to directory of qiskit files and `qiskit2tex.py`
 ```
 cd /my/dir/
 ```
-1. execute qiskit2tex.py passing the file name (w/o ending) of the target circuit to be compiled into a tex file and the output directory as arguments (leaving the output directory empty will save the tex file in the input directory)
+4. execute qiskit2tex.py passing the file name of the target circuit to be compiled into a tex file and the output directory as arguments (leaving the output directory empty will save the tex file in the input directory)
 ```
-# python3 qiskit2tex.py "my_circuit"
-python3 qiskit2tex.py "my_circuit" "my/out/dir/"
+# python3 qiskit2tex.py "circuit_sample.py"
+python3 qiskit2tex.py "circuit_sample.py" "my/out/dir/"
 ```
-1. include the tex files in your TeX document, e.g.
+5. include the tex files in your TeX document, e.g.
 ```
 \begin{figure}
 \input{my_circuit.tex}
